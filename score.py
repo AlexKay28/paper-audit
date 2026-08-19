@@ -107,7 +107,7 @@ def _band(score: Optional[float]) -> str:
 # Parsing the quiz files
 # ---------------------------------------------------------------------------
 
-HEADER_RE = re.compile(r"^###\s+([A-Z]\d+)\.\s*(.*)$")
+HEADER_RE = re.compile(r"^###\s+([A-Z]+\d+)\.\s*(.*)$")
 PASS_RE = re.compile(r"^\-\s*\*\*Pass if:\*\*\s*(Yes|No)", re.IGNORECASE)
 
 
@@ -166,7 +166,7 @@ def gen_template(aspects: List[AspectResult]) -> str:
     return "\n".join(out)
 
 
-LINE_RE = re.compile(r"^([A-Z]\d+)\s*:\s*(\S+)")
+LINE_RE = re.compile(r"^([A-Z]+\d+)\s*:\s*(\S+)")
 
 
 def load_answers(path: Path) -> Dict[str, str]:

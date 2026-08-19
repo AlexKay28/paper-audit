@@ -22,8 +22,20 @@ score.py    scorer: parses quiz files, reads an answer sheet, prints scores
 | Experimental Rigor | `quiz/06-experimental_rigor.md` | 25 |
 | Ethics & Societal Impact | `quiz/07-ethics_societal.md` | 23 |
 | Completeness | `quiz/08-completeness.md` | 23 |
+| Theory Rigor | `quiz/09-theory_rigor.md` | 24 |
+| Related Work & Positioning | `quiz/10-related_work_positioning.md` | 24 |
+| Data Quality & Documentation | `quiz/11-data_quality_documentation.md` | 25 |
+| Visuals & Design | `quiz/12-visuals_design.md` | 24 |
+| Claims Calibration | `quiz/13-claims_calibration.md` | 27 |
+| Resource Efficiency | `quiz/14-resource_efficiency.md` | 24 |
+| Fairness & Bias | `quiz/15-fairness_bias.md` | 25 |
+| Transferability | `quiz/16-transferability.md` | 25 |
+| NeurIPS Compliance | `quiz/17-neurips_compliance.md` | 25 |
+| ICLR Compliance | `quiz/18-iclr_compliance.md` | 25 |
+| ICML Compliance | `quiz/19-icml_compliance.md` | 25 |
+| ACL Compliance | `quiz/20-acl_compliance.md` | 25 |
 
-Total: **201 items**. See `quiz/README.md` for the full scoring methodology.
+Total: **499 items** across 20 aspects (16 general + 4 conference-specific). See `quiz/README.md` for the full scoring methodology.
 
 ## Evaluation cycle
 

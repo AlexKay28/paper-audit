@@ -19,6 +19,18 @@ cites the rule file(s) and section it derives from.
 | 6 | [`06-experimental_rigor.md`](06-experimental_rigor.md) | Experimental Rigor | `04` §2, `05` §E, `01` §6–8, `06` §1,5 |
 | 7 | [`07-ethics_societal.md`](07-ethics_societal.md) | Ethics & Societal Impact | `01` §9–16, `02`, `06` §7, `04` §4 |
 | 8 | [`08-completeness.md`](08-completeness.md) | Completeness (Self-containedness) | `01` §1–3, `03`, `02`, `06` |
+| 9 | [`09-theory_rigor.md`](09-theory_rigor.md) | Theory Rigor | `01` §3, `04` §3 (Mathiness), `06` §2 |
+| 10 | [`10-related_work_positioning.md`](10-related_work_positioning.md) | Related Work & Positioning | `03` §Originality, `04` §2, §6.2, `01` §12 |
+| 11 | [`11-data_quality_documentation.md`](11-data_quality_documentation.md) | Data Quality & Documentation | `05` §5–7, `01` §12–14, `04` §4.1 |
+| 12 | [`12-visuals_design.md`](12-visuals_design.md) | Visuals & Design | `06` §4, `03` §Clarity, `01` §7 |
+| 13 | [`13-claims_calibration.md`](13-claims_calibration.md) | Claims Calibration | `01` §1,2, `03` §ACL, `04` §1, §4.1, §6.1 |
+| 14 | [`14-resource_efficiency.md`](14-resource_efficiency.md) | Resource Efficiency | `01` §8, `05` §2,3,13, `06` §6 |
+| 15 | [`15-fairness_bias.md`](15-fairness_bias.md) | Fairness & Bias | `01` §10,11,13, `04` §4.1, §4.3, `02` |
+| 16 | [`16-transferability.md`](16-transferability.md) | Transferability | `03` §Significance, `04` §4.3, §6.1, `05` |
+| 17 | [`17-neurips_compliance.md`](17-neurips_compliance.md) | NeurIPS Compliance | `01` (all 16 checklist items), `03` §NeurIPS |
+| 18 | [`18-iclr_compliance.md`](18-iclr_compliance.md) | ICLR Compliance | `02` (Author Guide), `03` §ICLR |
+| 19 | [`19-icml_compliance.md`](19-icml_compliance.md) | ICML Compliance | `03` §ICML, `05` (extended Pineau) |
+| 20 | [`20-acl_compliance.md`](20-acl_compliance.md) | ACL Compliance | `03` §ACL, `01` §13,14, `02` |
 
 ## How to answer
 
@@ -86,7 +98,8 @@ A paper is considered **good on an aspect** at `aspect_score ≥ 80`, and
 ## Notes
 
 - The item sets intentionally overlap across aspects (e.g. error bars appear in
-  both `accuracy` and `experimental_rigor`). This is deliberate: each aspect is
+  both `accuracy` and `experimental_rigor`; theory assumptions appear in both
+  `accuracy` and `theory_rigor`). This is deliberate: each aspect is
   independently scorable, and overlap reflects how reviewers actually weigh the
   same evidence from multiple angles.
 - Source citations like `03 §Clarity` refer to file `03-ml-reviewer-guidelines.md`
