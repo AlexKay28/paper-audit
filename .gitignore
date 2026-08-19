@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Answers / local artifacts
+answers.txt
+*.answers.txt
+
+# Editor / OS
+.DS_Store
+*.swp
+.idea/
+.vscode/
