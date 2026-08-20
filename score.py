@@ -205,13 +205,17 @@ def apply_answers(aspects: List[AspectResult], answers: Dict[str, str]) -> None:
 # ---------------------------------------------------------------------------
 
 def report_text(aspects: List[AspectResult]) -> str:
+    # Widen the name column to fit the longest aspect name so long names
+    # (e.g. "data_quality_documentation") don't shift the rest of the row.
+    width = max([22] + [len(a.name) + 2 for a in aspects])
+    rule = width + 45  # width of a full row under the format strings below
     lines = []
-    lines.append("=" * 64)
+    lines.append("=" * rule)
     lines.append("PAPER EVALUATION SCORES")
-    lines.append("=" * 64)
-    lines.append(f"{'Aspect':<22}{'Score':>8}  {'Band':<12}{'Pass':>6}/"
+    lines.append("=" * rule)
+    lines.append(f"{'Aspect':<{width}}{'Score':>8}  {'Band':<12}{'Pass':>6}/"
                  f"{'Scor':>4}  {'N/A':>4}  {'Miss':>4}")
-    lines.append("-" * 64)
+    lines.append("-" * rule)
     scored = []
     for a in aspects:
         na = sum(1 for i in a.items if i.answer == "n/a")
@@ -219,25 +223,25 @@ def report_text(aspects: List[AspectResult]) -> str:
         scor = len(a.scored)
         score = a.score
         if score is None:
-            lines.append(f"{a.name:<22}{'N/A':>8}  {'—':<12}{a.passes:>6}/{scor:>4}  "
+            lines.append(f"{a.name:<{width}}{'N/A':>8}  {'—':<12}{a.passes:>6}/{scor:>4}  "
                          f"{na:>4}  {miss:>4}")
         else:
             scored.append(score)
-            lines.append(f"{a.name:<22}{score:>7.1f}%  {_band(score):<12}"
+            lines.append(f"{a.name:<{width}}{score:>7.1f}%  {_band(score):<12}"
                          f"{a.passes:>6}/{scor:>4}  {na:>4}  {miss:>4}")
-    lines.append("-" * 64)
+    lines.append("-" * rule)
     if scored:
         overall = sum(scored) / len(scored)
         worst = min(scored)
         good_overall = overall >= GOOD_OVERALL and worst >= NO_FATAL_FLAW
-        lines.append(f"{'OVERALL':<22}{overall:>7.1f}%  {_band(overall):<12}"
+        lines.append(f"{'OVERALL':<{width}}{overall:>7.1f}%  {_band(overall):<12}"
                      f"   good overall: {'YES' if good_overall else 'no'}")
-        lines.append(f"{'worst aspect':<22}{worst:>7.1f}%   "
+        lines.append(f"{'worst aspect':<{width}}{worst:>7.1f}%   "
                      f"(no aspect < {NO_FATAL_FLAW}: "
                      f"{'YES' if worst >= NO_FATAL_FLAW else 'no'})")
     else:
         lines.append("OVERALL: no applicable aspects (all N/A)")
-    lines.append("=" * 64)
+    lines.append("=" * rule)
 
     # Per-aspect failure detail (revision checklist)
     for a in aspects:
