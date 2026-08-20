@@ -31,6 +31,7 @@ cites the rule file(s) and section it derives from.
 | 18 | [`18-iclr_compliance.md`](18-iclr_compliance.md) | ICLR Compliance | `02` (Author Guide), `03` §ICLR |
 | 19 | [`19-icml_compliance.md`](19-icml_compliance.md) | ICML Compliance | `03` §ICML, `05` (extended Pineau) |
 | 20 | [`20-acl_compliance.md`](20-acl_compliance.md) | ACL Compliance | `03` §ACL, `01` §13,14, `02` |
+| 21 | [`21-scientific_storytelling.md`](21-scientific_storytelling.md) | Scientific Storytelling (Narrative) | `07` (OCAR, ABT, laddering, curiosity gaps), `04` §1,3–4 |
 
 ## How to answer
 
@@ -104,3 +105,8 @@ A paper is considered **good on an aspect** at `aspect_score ≥ 80`, and
   same evidence from multiple angles.
 - Source citations like `03 §Clarity` refer to file `03-ml-reviewer-guidelines.md`
   in `../rules/`, section "Clarity".
+- `21-scientific_storytelling.md` judges structure and communication, not
+  correctness: a technically sound paper can score low there, and that is the
+  signal it is meant to give. It overlaps `01-readability.md` by design —
+  readability asks whether sentences and figures are legible, storytelling asks
+  whether the paper is one argument with a beginning, a tension, and an end.

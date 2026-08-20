@@ -1,6 +1,6 @@
 # Paper Readability Evaluation
 
-A binary-question rubric for evaluating an ML/AI research paper across eight
+A binary-question rubric for evaluating an ML/AI research paper across 21
 aspects, producing a per-aspect score and an overall score. All quiz items are
 grounded in the reference documents under `rules/`.
 
@@ -34,8 +34,9 @@ score.py    scorer: parses quiz files, reads an answer sheet, prints scores
 | ICLR Compliance | `quiz/18-iclr_compliance.md` | 25 |
 | ICML Compliance | `quiz/19-icml_compliance.md` | 25 |
 | ACL Compliance | `quiz/20-acl_compliance.md` | 25 |
+| Scientific Storytelling | `quiz/21-scientific_storytelling.md` | 27 |
 
-Total: **499 items** across 20 aspects (16 general + 4 conference-specific). See `quiz/README.md` for the full scoring methodology.
+Total: **526 items** across 21 aspects (17 general + 4 conference-specific). See `quiz/README.md` for the full scoring methodology.
 
 ## Evaluation cycle
 

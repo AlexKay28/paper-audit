@@ -14,6 +14,7 @@ LLM-assisted paper review, or as a pre-submission self-audit.
 | 4 | [`04-troubling-trends-lipton-steinhardt.md`](04-troubling-trends-lipton-steinhardt.md) | [Lipton & Steinhardt, arXiv:1807.03341](https://arxiv.org/abs/1807.03341) | 4 rejection traps: mathiness, speculation, bad ablations, language misuse |
 | 5 | [`05-pineau-reproducibility-checklist.md`](05-pineau-reproducibility-checklist.md) | [Pineau et al. Reproducibility Checklist](https://www.cs.mcgill.ca/~jpineau/ReproducibilityChecklist.pdf) | Gold-standard 2-page checklist: hyperparameters, seeds, baseline fairness |
 | 6 | [`06-ai-review-prompt.md`](06-ai-review-prompt.md) | Synthesized from sources above | Ready-to-paste prompt for LLM-based paper review |
+| 7 | [`07-scientific-storytelling.md`](07-scientific-storytelling.md) | Schimel *Writing Science*; Olson *Houston, We Have a Narrative*; Carpenter *The Craft of Science Writing* | Narrative structure: OCAR arc, ABT framework, information laddering, curiosity gaps |
 
 ## How to Use
 
@@ -21,11 +22,16 @@ LLM-assisted paper review, or as a pre-submission self-audit.
 2. **Anticipate reviewer concerns** — Read `03` and `04`; pre-empt common critiques.
 3. **LLM-assisted review** — Paste your paper plus the prompt in `06`.
 4. **Conference-specific compliance** — Refer to `02` (ICLR) and the ICLR section of `03`.
+5. **Structure & narrative** — Use `07` when the science is sound but the paper
+   does not read as one argument.
 
 ## Source Notes
 
 - All conference content was fetched from the official sites listed above on
   Aug 19, 2026. Always cross-check the current year's CFP before submission,
   because guidelines are revised annually.
+- `07` is compiled from books and essay collections rather than fetched from a
+  single source; its claims are attributed to their authors, not presented as
+  independently established findings. See `07` §8 for the reference list.
 - The Pineau checklist PDF is rendered from the binary content of the original
   PDF; the structured items here are the canonical reproduction.
